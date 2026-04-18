@@ -158,21 +158,6 @@ Apply changes:
 ```bash
 terraform apply
 ```
-
-## Cost Estimate
-
-Monthly cost for default configuration:
-
-```
-EKS Control Plane:        $73
-2x t3.small nodes:        $30
-NAT Gateway:              $33
-EBS Storage:              $4
-Data Transfer:            ~$10
-─────────────────────────────
-TOTAL:                    ~$150/month
-```
-
 ## Cleanup
 
 **Important**: This destroys all resources and data!
