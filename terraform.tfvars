@@ -1,5 +1,6 @@
+region               = "ap-southeast-1"
 environment          = "dev"
-cluster_name         = "terraform-hc-eks-ap-cluster"
+cluster_name         = "tf-eks-singapore-cluster"
 vpc_cidr             = "192.168.0.0/16"
 availability_zones   = ["ap-southeast-1a", "ap-southeast-1b", "ap-southeast-1c"]
 public_subnet_cidrs  = ["192.168.64.0/19", "192.168.0.0/19", "192.168.32.0/19"]
@@ -9,3 +10,6 @@ instance_types       = ["t3.small"]
 desired_capacity     = 2
 min_capacity         = 1
 max_capacity         = 4
+cluster_admin_arns = [
+  "arn:aws:iam::203932541249:user/master-programmatic-admin"
+]
